@@ -30,6 +30,7 @@ html {
   color: #ffffff;
   padding: 15px;
   height: 500px;
+
   
 
 }
@@ -48,9 +49,7 @@ html {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.menu li:hover {
-  background-color: #0099cc;
-}
+
 
 
 
@@ -58,10 +57,26 @@ html {
   background-color: #0099cc;
   color: #ffffff;
   text-align: center;
-  font-size: 12px;
-  padding: 15px;
+  
+}
+/* Mobile and Tablet */
+@media (max-width: 768px) { 
+  html {
+    font-size: calc(16px + 2 * ((100vw - 360px) / 768));
+  }
 }
 
+/* Laptop and Desktops screens */
+@media (min-width: 769px) {
+  html {
+    font-size: calc(14px + 10 * ((100vw - 769px) / 2048));
+  }
+}
+
+/* Excessively large screens */
+html {
+  font-size: 36px;
+}
 
 
 
@@ -78,8 +93,8 @@ html {
         
         border: 10px solid white;
         margin: 10px;
-        height: 400px;
-        width: 250px;
+        height: 650px;
+        width: 330px;
         box-shadow: 2px 2px 4px #000000;
         
         
@@ -93,13 +108,10 @@ html {
      height: 50%;
 
     }
-    #img-baner{
-        float: right;
-      width: 300px;
-    height: 300px;
+    
   
 
-    }
+    
     button{
       color: skyblue;
       background-color: rgb(214, 82, 49);
@@ -111,30 +123,22 @@ html {
     #winerimg:hover{
       height: 350px;
       width: 500px;
-      transition: width 2s, height 2s, transform 2s;
-  
-  transform: rotate(360deg);
+      
+      
+     
     }
-/* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
+    #winerimg{
+      float: right;
+      height: auto;
+      width: auto;
+    }
+    p{
+      font-size: xx-small;
+      text-overflow: hide;
+    }
+    h3{
+         text-align: center;
+    }
 
 
 </style>
@@ -143,17 +147,17 @@ html {
 
 <div class="header">
   <h1>football team Argentina</h1>
-  <p><h2>Copa America Final Argentina
-     beat Brazil 1-0: Di Maria goal gives Messi & Argentina first Copa America title since 1993</h2></p>
+  <p><h3>Copa America Final Argentina
+     beat Brazil 1-0: Di Maria goal gives Messi & Argentina first Copa America title since 1993</h3></p>
      <img src="playerimg/download (18).jpg" alt="" id="winerimg">
      <button>SEE MORE </button>
-     <img src="playerimg/268-2684779_argentina-world-cup-argentina-football-logo-world-cup.png" alt="" id="img-baner">
+     
 </div>
 <div class="col-3 right">  
 <div class="menu-container">
   <div class="foodball-player">
     <img src="playerimg/dim.jpg" alt="">
-    <h2>Ángel Di María</h2>
+    <h3>Ángel Di María</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam quos, velit doloremque at quibusdam temporibus fugiat repellat commodi nihil soluta.
     </p>
 
@@ -161,67 +165,67 @@ html {
 
     <div class="foodball-player">
         <img src="playerimg/1_Romero.jpg" alt="">
-        <h2>Cristian Romero</h2>
+        <h3>Cristian Romero</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque excepturi unde dolorum cupiditate fuga voluptas quasi iste incidunt dolores, quas asperiores m</p>
         
     </div>
     <div class="foodball-player">
         <img src="playerimg/Emiliano Martínez.jpg" alt="">
-        <h2>Emiliano Martínez</h2>
+        <h3>Emiliano Martínez</h3>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem nihil a non illum minima aperiam suscipit nulla officia consectetur dicta.</p>
     
     </div>
     <div class="foodball-player">
         <img src="playerimg/Germán Pezzella (1).jpg" alt="">
-        <h2>Germán Pezzella</h2>
+        <h3>Germán Pezzella</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum reiciendis repellat ut, error sequi fugiat ipsa  suscipit?</p>
     </div>
 
   
     <div class="foodball-player">
         <img src="playerimg/Giovani Lo Celso.jpg"alt="">
-        <h2>Giovani Lo Celso</h2>
+        <h3>Giovani Lo Celso</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sapiente quos corrupti at necessit impedit eveniet Ducimus, hic!</p>
         
     </div>
     <div class="foodball-player">
         <img src="playerimg/Juan Foyth (1).jpg" alt="">
-        <h2>Juan Foyth</h2>
+        <h3>Juan Foyth</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque veniam quos excepturi quis soluta iste? Earum aut quam alias quae?</p>
     </div>
     <div class="foodball-player">
         <img src="playerimg/Lionel-Messi-Argentina-21.jpg"alt="">
-        <h2>Lionel-Messi</h2>
+        <h3>Lionel-Messi</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis tempora excepturi dicta dolorum minus inventore ullam? Omnis iure ex delectus.</p>
     </div>
  
  
     <div class="foodball-player">
         <img src="playerimg/lucas_martxnez_quarta.jpg_1359985867.jpg" alt="">
-        <h2>Lucas Martínez Quarta</h2>
+        <h3>Lucas Martínez Quarta</h3>
         <p>Lorem ipsum dolor sit aatibus, odio reprehenderit provident libero aut laborum consequatur maxime vel ea saepe?</p>
     </div>
     <div class="foodball-player">
         <img src="playerimg/Marcos Acuña.jpg" alt="">
-        <h2>Marcos Acuña</h2>
+        <h3>Marcos Acuña</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptatem autem maiores ipsa in  amet laudantium quod itaque dignissimos.</p>
     </div>
     <div class="foodball-player">
         <img src="playerimg/Nicolás Otamendi.jpg" alt="">
-        <h2>Nicolás Otamendi</h2>
+        <h3>Nicolás Otamendi</h3>
         <p>Lorem ipsum dolor sit amet consectetur,  earum corrupti esse consequuntur? Eaque accusamus eos adipisci alias!</p>
     
     </div>
  
     <div class="foodball-player">
         <img src="playerimg/Papu Gómez.jpg" alt="">
-        <h2>Papu Gómez</h2>
+        <h3>Papu Gómez</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nisi accusantium reprehenderit! Asperiores,  Explicabo perspiciatis dolor quas totam.</p>
     
     </div>
     <div class="foodball-player">
         <img src="playerimg/Rodrigo De Paul.jpg" alt="">
-        <h2>Rodrigo De Paul</h2>
+        <h3>Rodrigo De Paul</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facilis beatae rerum sint iure, ex esse voluptate quos officiis quisquam?
 
         </p>
@@ -232,8 +236,8 @@ html {
 
 <br>
   <div class="col-6">
-    <img src="playerim alt=">
-    <h1> football</h1>
+    <img src="playerimg/images (9).jpg">
+    <h3> football</h3>
     <p><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i><i class="fab fa-youtube"></i>
      </p>
   </div>
@@ -243,4 +247,5 @@ html {
 
 
 </body>
+
 </html>
