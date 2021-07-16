@@ -25,11 +25,13 @@ html {
   font-family: "Lucida Sans", sans-serif;
 }
 
-.header {
+.header:hover{
   background-color: #1b9cd8;
   color: #ffffff;
   padding: 15px;
   height: 500px;
+  
+
 }
 
 .menu ul {
@@ -78,6 +80,7 @@ html {
         margin: 10px;
         height: 400px;
         width: 250px;
+        box-shadow: 2px 2px 4px #000000;
         
         
     }
@@ -92,18 +95,25 @@ html {
     }
     #img-baner{
         float: right;
-        height: 350px;
-        width: 500px;
+      width: 300px;
+    height: 300px;
+  
 
     }
     button{
       color: skyblue;
-      border-radius: 5%;
+      background-color: rgb(214, 82, 49);
+      border: #1b9cd8;
+      border-radius: 20%;
+      padding: 20px;
       
     }
-    #winerimg{
+    #winerimg:hover{
       height: 350px;
       width: 500px;
+      transition: width 2s, height 2s, transform 2s;
+  
+  transform: rotate(360deg);
     }
 /* For desktop: */
 .col-1 {width: 8.33%;}
